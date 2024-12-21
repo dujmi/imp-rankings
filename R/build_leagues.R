@@ -12,6 +12,6 @@ build_leagues <- function() {
         format = c(2, 2, 2, 2, 2)
     )
 
-    saveRDS(leagues, file = "data/input/clean/leagues.rds")
+    saveRDS(leagues, file = "data/input/leagues.rds")
     return leagues
 }
