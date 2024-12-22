@@ -2,6 +2,12 @@ source("R/load_league_odds.R")
 source("R/build_parameters.R")
 source("R/build_leagues.R")
 
+if (!file.exists("data/input/leagues.rds")) {
+    leagues <- build_leagues()
+} else {
+    leagues <- readRDS("data/input/leagues.rds")
+}
+
 params <- build_parameters()
 seasons <- c(params$start_year - 1, params$start_year)
 rankings <- NULL
