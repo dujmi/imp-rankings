@@ -1,5 +1,5 @@
 load_league_odds <- function(seasons, fdck_id, name) {
-    odds <- tidytable::tidytable()
+    odds <- NULL
     for (season in seasons) {
         season_odds <- tidytable::tidytable(readr::read_csv(
             sprintf(
@@ -14,6 +14,12 @@ load_league_odds <- function(seasons, fdck_id, name) {
             ) |>
             janitor::clean_names()
 
-        odds <- tidytable::rbind(odds, season_odds)
+        if (is.null(odds)) {
+            odds <- season_odds
+        } else {
+            odds <- tidytable::bind_rows(list(odds, season_odds))
+        }
     }
+
+    return (odds)
 }

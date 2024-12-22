@@ -1,5 +1,5 @@
 build_leagues <- function() {
-    leagues <- tidytable(
+    leagues <- tidytable::tidytable(
         name = c("Premier League", "La Liga", "Serie A", "Ligue 1", "Bundesliga"),
         fb_url = c(
             "https://fbref.com/en/comps/9/schedule/Premier-League-Scores-and-Fixtures",
@@ -8,10 +8,9 @@ build_leagues <- function() {
             "https://fbref.com/en/comps/13/schedule/Ligue-1-Scores-and-Fixtures",
             "https://fbref.com/en/comps/20/schedule/Bundesliga-Scores-and-Fixtures"
         ),
-        fdck_id = c("E0", "SP1", "I1", "F1", "D1"),
-        format = c(2, 2, 2, 2, 2)
+        fdck_id = c("E0", "SP1", "I1", "F1", "D1")
     )
 
     saveRDS(leagues, file = "data/input/leagues.rds")
-    return leagues
+    return (leagues)
 }

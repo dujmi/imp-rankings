@@ -1,14 +1,10 @@
-source("build_leagues.R")
-source("load_league_odds.R")
+source("R/load_league_odds.R")
+source("R/build_parameters.R")
+source("R/build_leagues.R")
 
-if (!file.exists("data/input/leagues.rds")) {
-    leagues <- build_leagues()
-}
-else {
-    leagues <- readRDS("data/input/leagues.rds")
-}
-
-seasons <- c(23, 24) # start years
+params <- build_parameters()
+seasons <- c(params$start_year - 1, params$start_year)
+rankings <- NULL
 
 for (i in 1:nrow(leagues)) {
     league <- leagues[i, ]
@@ -29,16 +25,16 @@ for (i in 1:nrow(leagues)) {
         tidytable::select(-date, -time, -hprob, -dprob, -aprob, -total_prob) |>
         tidytable::arrange(desc(datetime))
 
-    teams_in_league <- length(unique(c(odds[season == seasons[2]]$home_team, odds[season == seasons[2]]$away_team)))
-    games_in_season <- nrow(odds[odds$season == seasons[2], ]) / (teams_in_league / 2)
+    teams_in_league <- length(unique(c(league_odds[season == seasons[2]]$home_team, league_odds[season == seasons[2]]$away_team)))
+    games_in_season <- nrow(league_odds[league_odds$season == seasons[2], ]) / (teams_in_league / 2)
     half_games <- ifelse(
         games_in_season < (teams_in_league - 1) / 2,
         games_in_season,
         (teams_in_league -  1) / 2
     )
-    alpha <- 0.75 ** (1 / half_games)
+    alpha <- params$coeff ** (1 / half_games)
 
-    home_games_odds <- odds |>
+    home_games_odds <- league_odds |>
         tidytable::select(datetime, competition, season, home_team, h_nv, d_nv) |>
         tidytable::mutate(
             xp = 3 * h_nv + 1 * d_nv,
@@ -48,7 +44,7 @@ for (i in 1:nrow(leagues)) {
         ) |>
         tidytable::select(-h_nv, -d_nv)
 
-    away_games_odds <- odds |>
+    away_games_odds <- league_odds |>
         tidytable::select(datetime, competition, season, away_team, a_nv, d_nv) |>
         tidytable::mutate(
             xp = 3 * a_nv + 1 * d_nv,
@@ -58,7 +54,7 @@ for (i in 1:nrow(leagues)) {
         ) |>
         tidytable::select(-a_nv, -d_nv)
 
-    all_teams_games_odds <- rbind(home_games_odds, away_games_odds)
+    all_teams_games_odds <- tidytable::bind_rows(list(home_games_odds, away_games_odds))
 
     relegated_teams <- all_teams_games_odds |>
         tidytable::filter(!(team %in% unique(all_teams_games_odds |>
@@ -113,5 +109,13 @@ for (i in 1:nrow(leagues)) {
             !(team %in% relegated_teams)
         ) |>
         arrange(desc(xp_w))
+
+    if (is.null(rankings)) {
+        rankings <- season_rankings
+    } else {
+        rankings <- tidytable::bind_rows(list(rankings, season_rankings))
+    }
 }
 
+write.csv(rankings, "data/output/rankings.csv")
+saveRDS(rankings, file = "data/output/rankings.rds")
