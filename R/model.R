@@ -80,7 +80,7 @@ for (i in 1:nrow(leagues)) {
         tidytable::filter(rank <= (teams_in_league - 1) * 2) |>
         tidytable::ungroup() |>
         tidytable::mutate(
-            xp_w = case_when(
+            xp_w = tidytable::case_when(
                 !(team %in% relegated_teams) ~ xp * alpha ** (rank - 1),
                 (team %in% relegated_teams) & (rank <= 38 - games_in_season) ~ xp * alpha ** (rank - 1 + games_in_season),
                 TRUE ~ 0
@@ -108,7 +108,12 @@ for (i in 1:nrow(leagues)) {
         tidytable::filter(
             !(team %in% relegated_teams)
         ) |>
-        arrange(desc(xp_w))
+        tidytable::arrange(desc(xp_w))
+
+    season_rankings <- season_rankings |>
+        tidytable::mutate(
+            xp_w_z = round(50 + 10 * ((xp_w - mean(season_rankings$xp_w)) / sd(season_rankings$xp_w)), digits = 0)
+        )
 
     if (is.null(rankings)) {
         rankings <- season_rankings
