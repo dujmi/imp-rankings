@@ -1,64 +1,64 @@
 "","competition","team","xp_w","xp_w_z"
-"1","Premier League","Man City",28.8741568078981,70
-"2","Premier League","Arsenal",27.735182517957,67
-"3","Premier League","Liverpool",27.7320220022712,67
-"4","Premier League","Chelsea",23.4689228789373,59
-"5","Premier League","Tottenham",21.4491960797155,56
-"6","Premier League","Newcastle",20.7633606834656,54
-"7","Premier League","Aston Villa",20.032675131043,53
-"8","Premier League","Man United",19.9011446145856,53
-"9","Premier League","Brighton",18.733455150191,50
-"10","Premier League","Bournemouth",18.246425821859,50
-"11","Premier League","Fulham",16.4298624545052,46
-"12","Premier League","Brentford",15.9014051059682,45
-"13","Premier League","Crystal Palace",15.7236126502667,45
-"14","Premier League","Nott'm Forest",15.4429865859402,44
-"15","Premier League","West Ham",15.1792976576175,44
-"16","Premier League","Everton",15.1596997852418,44
-"17","Premier League","Wolves",14.0044271440401,42
-"18","Premier League","Ipswich",12.3606603035503,38
-"19","Premier League","Leicester",11.6616581224286,37
-"20","Premier League","Southampton",10.8136783212213,36
-"21","La Liga","Real Madrid",28.1783668304935,71
-"22","La Liga","Barcelona",27.6116534200399,70
-"23","La Liga","Ath Madrid",25.9042469852919,66
-"24","La Liga","Sociedad",21.8840912604659,58
-"25","La Liga","Ath Bilbao",21.6881436078794,57
-"26","La Liga","Villarreal",19.7513818444077,53
-"27","La Liga","Girona",19.2059105148336,52
-"28","La Liga","Celta",18.0624694445535,50
-"29","La Liga","Sevilla",16.9789168747861,48
-"30","La Liga","Betis",16.9431946275019,48
-"31","La Liga","Mallorca",16.8727713099186,47
-"32","La Liga","Valencia",16.6262492012559,47
-"33","La Liga","Osasuna",16.1094201655836,46
-"34","La Liga","Vallecano",15.9739915032028,45
-"35","La Liga","Getafe",15.9504152588418,45
-"36","La Liga","Alaves",15.7334309209802,45
-"37","La Liga","Las Palmas",12.9030092144713,39
-"38","La Liga","Espanol",12.7431984317402,39
-"39","La Liga","Valladolid",12.1129502348243,37
-"40","La Liga","Leganes",11.7153441523066,37
-"41","Serie A","Inter",28.2981765004034,71
-"42","Serie A","Juventus",24.3726029914041,62
-"43","Serie A","Milan",24.3270849634569,62
-"44","Serie A","Atalanta",24.3051691262532,62
-"45","Serie A","Napoli",23.8038346173669,61
-"46","Serie A","Fiorentina",21.7244156837206,57
-"47","Serie A","Lazio",21.4331321760728,56
-"48","Serie A","Roma",20.6639668581318,55
-"49","Serie A","Bologna",19.1888847981444,52
-"50","Serie A","Torino",16.0236519075156,45
-"51","Serie A","Como",15.8505450132955,45
+"1","Premier League","Man City",28.2562451941907,69
+"2","Premier League","Arsenal",27.811131905365,68
+"3","Premier League","Liverpool",27.6124984560287,68
+"4","Premier League","Chelsea",23.6004052910884,60
+"5","Premier League","Newcastle",21.1021054068048,55
+"6","Premier League","Tottenham",20.6409311033334,54
+"7","Premier League","Man United",20.2709724821042,53
+"8","Premier League","Aston Villa",19.6881902364065,52
+"9","Premier League","Brighton",18.8087938693875,51
+"10","Premier League","Bournemouth",17.8138494074242,49
+"11","Premier League","Fulham",17.2242727765105,48
+"12","Premier League","Brentford",16.1292762920201,45
+"13","Premier League","Nott'm Forest",15.618067206184,45
+"14","Premier League","West Ham",15.3048337339388,44
+"15","Premier League","Crystal Palace",15.2195418485208,44
+"16","Premier League","Everton",14.8305808203464,43
+"17","Premier League","Wolves",14.4142862436675,42
+"18","Premier League","Ipswich",12.2949553396642,38
+"19","Premier League","Leicester",12.057368546692,38
+"20","Premier League","Southampton",10.7648335069082,35
+"21","La Liga","Real Madrid",28.5026973704767,72
+"22","La Liga","Barcelona",27.2238898869677,69
+"23","La Liga","Ath Madrid",25.0081797429657,64
+"24","La Liga","Ath Bilbao",21.7843516584589,58
+"25","La Liga","Sociedad",21.5689120732602,57
+"26","La Liga","Girona",20.0710885806337,54
+"27","La Liga","Villarreal",20.0459785057266,54
+"28","La Liga","Celta",18.0443075996729,50
+"29","La Liga","Betis",17.5894457465621,49
+"30","La Liga","Valencia",17.0653757982874,48
+"31","La Liga","Mallorca",16.7428126600282,47
+"32","La Liga","Getafe",16.3425984548941,46
+"33","La Liga","Sevilla",16.1557984742612,46
+"34","La Liga","Osasuna",15.8898738914539,45
+"35","La Liga","Alaves",15.6210222427175,45
+"36","La Liga","Vallecano",15.5730899640471,45
+"37","La Liga","Las Palmas",13.6328149303497,40
+"38","La Liga","Espanol",12.8026968764457,39
+"39","La Liga","Leganes",11.7639416973158,37
+"40","La Liga","Valladolid",11.6870634081945,36
+"41","Serie A","Inter",28.2981765004034,70
+"42","Serie A","Atalanta",24.913659843949,63
+"43","Serie A","Juventus",24.60031614133,62
+"44","Serie A","Milan",24.4998266785731,62
+"45","Serie A","Napoli",23.9911981197964,61
+"46","Serie A","Lazio",21.8406519357034,57
+"47","Serie A","Fiorentina",21.7244156837206,57
+"48","Serie A","Roma",21.3762543614219,56
+"49","Serie A","Bologna",19.2618111040582,52
+"50","Serie A","Torino",15.9210971629122,45
+"51","Serie A","Como",15.5944636543713,45
 "52","Serie A","Udinese",15.2948695007094,44
-"53","Serie A","Cagliari",14.3530316035996,42
-"54","Serie A","Genoa",14.1415380759651,41
-"55","Serie A","Lecce",14.0976853956737,41
-"56","Serie A","Parma",14.0942643401165,41
-"57","Serie A","Monza",13.6271216270286,40
-"58","Serie A","Verona",13.5344849715901,40
-"59","Serie A","Empoli",13.5235677453049,40
-"60","Serie A","Venezia",13.0931445069805,39
+"53","Serie A","Cagliari",14.5559102232047,43
+"54","Serie A","Genoa",13.8491802243535,41
+"55","Serie A","Lecce",13.8128122780761,41
+"56","Serie A","Parma",13.6457624203062,41
+"57","Serie A","Venezia",13.5682439273995,41
+"58","Serie A","Monza",13.2676775653253,40
+"59","Serie A","Verona",13.2379541447673,40
+"60","Serie A","Empoli",12.9473659691837,39
 "61","Ligue 1","Paris SG",26.3391793947475,73
 "62","Ligue 1","Monaco",21.5604867289073,62
 "63","Ligue 1","Marseille",20.1531057656735,59
@@ -77,21 +77,21 @@
 "76","Ligue 1","Le Havre",12.2419262842801,40
 "77","Ligue 1","St Etienne",10.9193363687265,37
 "78","Ligue 1","Angers",10.2886966782712,35
-"79","Bundesliga","Bayern Munich",27.5418116111174,72
-"80","Bundesliga","Leverkusen",25.4101113155777,68
-"81","Bundesliga","RB Leipzig",22.2365109094511,61
-"82","Bundesliga","Dortmund",20.9977884404911,59
-"83","Bundesliga","Stuttgart",20.7081233674318,58
-"84","Bundesliga","Ein Frankfurt",17.3521279562784,51
-"85","Bundesliga","Freiburg",16.5567192033093,50
-"86","Bundesliga","M'gladbach",15.8562331335529,48
-"87","Bundesliga","Wolfsburg",15.6444905676249,48
-"88","Bundesliga","Mainz",15.5085908151311,48
-"89","Bundesliga","Union Berlin",14.8144241689471,46
-"90","Bundesliga","Werder Bremen",14.4507815228013,46
-"91","Bundesliga","Hoffenheim",14.2982125397524,45
-"92","Bundesliga","Augsburg",13.3687969891283,43
-"93","Bundesliga","St Pauli",12.1733950591918,41
-"94","Bundesliga","Heidenheim",11.3482519254226,39
-"95","Bundesliga","Bochum",10.5547662713782,38
-"96","Bundesliga","Holstein Kiel",10.1728560630408,37
+"79","Bundesliga","Bayern Munich",27.7449883043962,73
+"80","Bundesliga","Leverkusen",25.5159870364716,68
+"81","Bundesliga","Stuttgart",21.1913480495913,59
+"82","Bundesliga","Dortmund",20.8405636566574,59
+"83","Bundesliga","RB Leipzig",20.7232490639844,59
+"84","Bundesliga","Ein Frankfurt",17.6161874864551,52
+"85","Bundesliga","M'gladbach",15.7334248357323,48
+"86","Bundesliga","Freiburg",15.7101533839527,48
+"87","Bundesliga","Wolfsburg",15.4679744974155,48
+"88","Bundesliga","Mainz",15.2607449410789,47
+"89","Bundesliga","Werder Bremen",14.8075339199679,46
+"90","Bundesliga","Union Berlin",14.6864312859104,46
+"91","Bundesliga","Hoffenheim",14.66363902738,46
+"92","Bundesliga","Augsburg",13.8546459076182,44
+"93","Bundesliga","St Pauli",11.8060554892295,40
+"94","Bundesliga","Heidenheim",11.4970368096855,39
+"95","Bundesliga","Bochum",11.277319150245,39
+"96","Bundesliga","Holstein Kiel",10.433333653323,37
